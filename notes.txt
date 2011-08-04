@@ -1,0 +1,9 @@
+http://devcenter.heroku.com/articles/static-sites-on-heroku
+
+copy - why you would want to do business with tcf
+
+our priciples - like 37signals
+
+- good customer service
+- usablility and intuative to use
+- why does it have to be ugly
