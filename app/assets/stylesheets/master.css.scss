@@ -1,0 +1,168 @@
+/* Organising and orchastrating the css files
+-------------------------------------------------------------------*/
+
+
+/* =body
+------------------------------------------------------------------*/
+body { 
+	font-family: Cambria, Georgia, serif;
+}
+
+
+/* =container
+------------------------------------------------------------------*/
+#container {
+	margin: 0 auto;
+	width: 90%;
+	border-top: 1px solid #ccc;
+	background: #fff;
+  
+  @media screen and (min-width: 600px) {
+    width: 80%
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    width:70%;
+  }
+  
+}
+
+header { width: 100% }
+
+h1 {
+	font-size:4em;
+	font-weight:normal;
+	color:#009933;
+  padding-top: 80px;
+	padding-left: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	background:#fff image-url("factory/64_black.png") no-repeat top center;
+	margin: 0.5em 0;
+  text-align: center;
+  width: 100%;
+  
+  @media screen and (min-width: 600px) {
+  	margin-top: 1em;
+    padding-left: 80px;
+    background-position: center left;
+    padding-top:0;
+    float:left;
+    text-align: left;
+    
+	}
+}
+
+.focus {
+	border-bottom:1px solid #ccc;
+	margin: 1em 0;
+  
+  p {
+  		font-size:2em;
+  		font-weight:normal;
+  		color: #232323;
+      text-align: center;
+      
+      @media screen and (min-width: 600px) {
+        font-size:3em;
+        text-align: left;
+      }
+  	}
+	}
+
+/* =p-content - primary content
+------------------------------------------------------------------*/
+
+.p-content {
+	padding: 2em 0 4em 0;
+  color:#464646;
+  
+  h3 {
+  		font-size: 1.6em;
+  		font-weight: normal;
+  		margin:0 0 0.5em;
+  		font-family: 'Ubuntu', sans-serif;
+  		color:#CC0000;
+  }
+	
+  p {
+  		font-size: 1.5em;
+  		margin:0 0 1.5em;
+  		line-height:1.5;
+    }
+	}
+
+
+/* = p-content
+------------------------------------------------------------------*/
+.p-content section {
+
+    @media screen and (min-width: 600px) {
+    	float:left;
+    	display:inline;
+      width:46%;
+      margin-left: 8%;
+    }
+    
+    @media only screen and (min-width: 1024px) {
+      width:28%;
+    }
+	}
+
+.p-content .first {
+	margin-left: 0;
+}
+
+
+/* =footer
+------------------------------------------------------------------*/
+
+footer {
+	color:#464646;
+	width: 100%;
+	border-top:1px solid #ccc;
+	background:#fff image-url("factory/32_black.png") no-repeat center bottom;
+	padding-top: 2em; padding-bottom: 4em;
+	margin-bottom: 2em;
+  
+  @media screen and (min-width: 600px) {
+    background-position: center left;
+    padding-bottom: 2em;
+  }
+  
+    p {
+  		font-size: 1.2em;
+  		line-height:1.5;
+  		text-align: center;
+      margin: 0.5em 0;
+      
+      @media screen and (min-width: 600px) {
+        margin-left: 60px;
+        text-align: left;
+      }
+    }
+    
+    a {
+  		border-bottom:1px solid #ccc;
+  		color:#009933;
+  		padding-bottom:1px;
+  		text-decoration:none;
+    }
+
+    a:hover {
+    	border-bottom:2px solid #009933;
+    }    
+}
+
+/* wraps enclosing block element around inner floated elements */
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
