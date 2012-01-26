@@ -1,0 +1,57 @@
+About
+-----
+
+We make apps using highly tested Ruby on Rails to ensure maximum quality and stright forward, honest collaboration to help make you happy.
+
+how we work
+- agile
+  - iterations, you can walk away
+  - testing
+- no fuss, straight forward
+- quality
+- build a culture, build a business that we love and hopefully you will too
+- use best practices not because we like it but becuse they benefit you.
+- close collaboration to build what you really need not what you think you need.
+- lean, no waste
+
+what we offer
+- apps into businesses
+- minimun viable product launches
+- happy customers
+- soemthing new / innovation
+
+offer examples like sidekick studios
+
+Projects
+---------
+
+
+
+Contact us
+----------
+
+
+
+
+
+----
+EXISTING COPY
+
+<h3>Web Application Development</h3>
+<p>We specialise in creating <strong>high quality</strong>, <strong>user centred</strong> web apps.</p>
+<p>We use a mystic blend of eastern philosophies, <strong>honesty</strong> and <strong>damn good code</strong> to solve your problems and <strong>make you happy</strong>.</p>
+</section>
+        
+<section>
+<h3>User Interface Design</h3>
+
+<p>Design is about <strong>usability</strong>. We build simple, usable, beautiful and <strong>intuitive</strong> 
+  user interfaces for web applications and sites.</p>
+  <h3>Product Development</h3>
+      <p>Have a great idea for a product or startup? We can work with you to make it a reality and help start your business.</p>
+</section>				
+				
+<section id="specialities">				
+<h3>Specialities</h3>
+<ul>
+  <li>Ruby on Rails</li>

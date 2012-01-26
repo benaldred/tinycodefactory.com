@@ -19,13 +19,32 @@
 
 </head>
 <body>
-  <div class="tops"></div>
-  <div id="container">
-    <header class="clearfix">
+  <div id="top">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <header id="app">
       <h1>Tiny Code Factory.</h1>
     </header>
+ 
+    <section class="intro">
+      <%= yield :intro %>
+    </section>
+  </div><!-- .container -->   
+  
+  <div class="p-content clearfix">
     <%= yield %>
-    
+  </div>
+  
+  <div class="container">  
     <footer class="clearfix">
       <p>Get in touch: <a href="mailto:hello@tinycodefactory.com">hello@tinycodefactory.com</a></p>
       <p>A tiny web development company built on big principles.</p>
