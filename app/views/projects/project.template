@@ -1,0 +1,36 @@
+<% @project_title = "[Title]" %>
+
+<% content_for :intro do %>
+    <h1>[strapline]</h1>
+<% end %>
+
+<% content_for :project_testimonial do %>
+	[Testimonial]
+	<footer>[testimaonial giver and position]</footer>
+<% end %>
+
+<% content_for :project_image do %>
+	<%= image_tag("projects/[project]/main.png", "[Alt]") %>
+<% end %>
+
+<% content_for :project_secondary_image do %>
+	<%= image_tag("projects/[project]/secondary.png", "[Alt]") %>
+<% end %>
+
+
+<% content_for :project_sub_images do %>
+	<ul>
+		<li class="first"><%= image_tag("projects/[project]/sub1.png", "[Alt]") %></li>
+		<li><%= image_tag("projects/[project]/sub2.png"), "[Alt]" %></li>
+		<li><%= image_tag("projects/[project]/sub3.png"), "[Alt]" %></li>
+	</ul>
+<% end %>
+
+
+
+<p>[Intro to what the project is, who they are, what it is and what they wanted]</p>
+<p>[how that was achieved]</p>
+<p>[link to project]</p>
+<ul>
+	<li>Ruby on Rails</li>
+</ul>

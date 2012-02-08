@@ -1,0 +1,40 @@
+
+<% content_for :content do %>
+  <div class="principle">
+  	<div class="container">
+  	  <p>Small iterations and close collaboration to ensure you get the results you want.</p>
+  	</div>
+  </div>
+  
+  <div id="project" class="container clearfix">
+    <header>
+			<h1><%= @project_title || "Random Project" %></h1>
+    	<% if @client %><h2><%= @client %></h2><% end %>
+		</header>
+		
+    <% if content_for?(:project_testimonial) %>
+    <blockquote id="testimonial">
+      <%= yield :project_testimonial %>
+    </blockquote>
+    <% end %>
+    <div id="images">
+			<% if @prev || @next %>
+			<nav>
+				<ul>
+					<% if @prev %><li id="prev"><%= link_to raw("&laquo; previous project"), project_path(@prev) %></li><% end %>
+					<% if @next %><li id="next"><%= link_to raw("next project &raquo;"), project_path(@next) %></li><% end %>
+				</ul>
+			</nav>
+			<% end %>
+			
+      <%= content_for?(:project_image) ? yield(:project_image) : nil %>
+      <%= content_for?(:project_sub_images) ? yield(:project_sub_images) : nil %>
+      <%= content_for?(:project_secondary_image) ? yield(:project_secondary_image) : nil %>
+    </div>
+    <section id="project_content">
+      <%= content_for?(:project_content) ? yield(:project_content) : yield %>
+    </section>
+  </div>
+<% end %>
+
+<%= render :template => 'layouts/application' %>

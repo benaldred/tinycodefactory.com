@@ -1,0 +1,46 @@
+<%-
+ @project_title = "Boxedup"
+ @next = "qavs"
+-%>
+
+
+<% content_for :intro do %>
+    <h1>We help startups like Boxedup maximise revenue and create a sustainable business.</h1>
+<% end %>
+
+<% content_for :project_image do %>
+	<%= image_tag("projects/boxedup/showcase.png") %>
+<% end %>
+
+<% content_for :project_secondary_image do %>
+	<%#= image_tag("projects/boxedup/secondary.png") %>
+<% end %>
+
+
+<% content_for :project_sub_images do %>
+	<ul>
+		<li class="first"><%= image_tag("projects/boxedup/sub1.png") %></li>
+		<li><%= image_tag("projects/boxedup/sub2.png") %></li>
+		<li><%= image_tag("projects/boxedup/sub3.png") %></li>
+	</ul>
+<% end %>
+
+
+
+<p>Boxedup is a website that allows users to create wish-lists of products for birthdays and other occasions. It was acquired by Venturian media who had some plans to improve and expand the site. The existing site desperately needed its codebase improving considerably and a UI re-design. It was important that the site increased its revenue as soon as possible.</p>
+
+<p>The app was rewritten from the ground up. We continued to use Ruby on Rails, but the nature of product data had a better fit with a NoSQL document database (MongoDB). A robust automated testing suite was put in place and new UI templates built.
+A Javascript bookmarklet was developed in conjunction with an API to allow users to add product data easily.</p>
+
+<p>It was vital to make decisions based on the health of the business. Sometimes faster, more pragmatic solutions were found to help the site become profitable and sustainable more quickly.</p>
+
+<p><a href="http://www.boxedup.com">See the site</a></p>
+
+<ul class="skills">
+  <li>Site re-architecture</li>
+  <li>Ruby on Rails</li>
+  <li>MongoDB</li>
+  <li>Automated testing Rspec, Cucumber</li>
+  <li>Javascript bookmarklet and JSON API</li>
+  <li>Pragmatic business centered development</li>
+</ul>

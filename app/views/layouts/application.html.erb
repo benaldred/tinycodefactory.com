@@ -12,27 +12,34 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "modernizr" %>
+  <!--[if lt IE 9]>
+  	<%= javascript_include_tag "respond" %>
+  <![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
+  
+  <meta name="keywords" content="Tiny Code Factory, Web development, Ruby on Rails, Javascript, Ruby, Rails, freelance, contract, software, developer, software developer, Manchester, UK" />
+
+  <meta name="description" content="We build simple, easy to use and beautiful web-based applications and turn ideas into online businesses and help companies to innovate" />
 
 
 </head>
-<body>
+<body class="<%= body_class %>">
   <div id="top">
     <div class="container">
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact us</a></li>
+          <li><a href="/#projects">Projects</a></li>
+		  <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact us</a></li>
         </ul>
       </nav>
     </div>
   </div>
   <div class="container">
     <header id="app">
-      <h1>Tiny Code Factory.</h1>
+      <h1><a href="/">Tiny Code Factory.</a></h1>
     </header>
  
     <section class="intro">
@@ -41,11 +48,11 @@
   </div><!-- .container -->   
   
   <div class="p-content clearfix">
-    <%= yield %>
+    <%= content_for?(:content) ? yield(:content) : yield %>
   </div>
   
   <div class="container">  
-    <footer class="clearfix">
+    <footer class="app clearfix">
       <p>Get in touch: <a href="mailto:hello@tinycodefactory.com">hello@tinycodefactory.com</a></p>
       <p>A tiny web development company built on big principles.</p>
       <p><span class="copywrite">© Copyright <span id="cw-date">2008</span></span> tinycodefactory.com</p>
