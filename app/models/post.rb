@@ -1,4 +1,3 @@
-require 'Tumblr'
 class Post
   Tumblr.blog = 'tinycodefactory'
   
