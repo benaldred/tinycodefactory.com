@@ -23,7 +23,7 @@
 
   <meta name="description" content="We build simple, easy to use and beautiful web-based applications and turn ideas into online businesses and help companies to innovate" />
 
-
+  <%= render :partial => '/layouts/google_analytics' %>
 </head>
 <body class="<%= body_class %>">
   <div id="top">
@@ -66,8 +66,6 @@
   <script>window.jQuery || document.write('<script src="<%= asset_path("jquery") %>"><\/script>')</script>
 
   <%= javascript_include_tag "application" %>
-  
-  <%= render :partial => '/layouts/google_analytics' %>
   
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
