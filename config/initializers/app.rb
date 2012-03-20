@@ -1,0 +1,1 @@
+PROJECTS = [:qavs, :boxedup, :sayt, :chefnote]

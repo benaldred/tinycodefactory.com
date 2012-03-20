@@ -3,3 +3,19 @@
 
 en:
   hello: "Hello world"
+  
+  projects:
+    qavs:
+      title: "Queen's Award for Voluntary Service"
+      desc: "Modernisation and efficiency at the UK Government."
+    boxedup:
+      title: "Boxedup.com"
+      desc: "Re-engineering a startup from the ground up."
+    sayt:
+      title: "Sheena Amos Youth Trust"
+      desc: "Helping a charity to share information."
+    chefnote:
+      title: "Chefnote"
+      desc: "Our own Minimum Viable Product."
+
+  

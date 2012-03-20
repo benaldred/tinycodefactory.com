@@ -18,14 +18,13 @@
     </blockquote>
     <% end %>
     <div id="images">
-			<% if @prev || @next %>
-			<nav>
-				<ul>
-					<% if @prev %><li id="prev"><%= link_to raw("&laquo; previous project"), project_path(@prev) %></li><% end %>
-					<% if @next %><li id="next"><%= link_to raw("next project &raquo;"), project_path(@next) %></li><% end %>
-				</ul>
-			</nav>
-			<% end %>
+		<% index = PROJECTS.index(@project) %>
+		<nav>
+			<ul>
+				<% unless index == 0 %><li id="prev"><%= link_to raw("&laquo; previous project"), project_path(PROJECTS[index-1]) %></li><% end %>
+				<% unless index == PROJECTS.size - 1 %><li id="next"><%= link_to raw("next project &raquo;"), project_path(PROJECTS[index+1]) %></li><% end %>
+			</ul>
+		</nav>
 			
       <%= content_for?(:project_image) ? yield(:project_image) : nil %>
       <%= content_for?(:project_sub_images) ? yield(:project_sub_images) : nil %>
