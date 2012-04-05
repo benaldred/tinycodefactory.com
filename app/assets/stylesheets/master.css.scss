@@ -83,9 +83,18 @@ body {
         }
       }
 	  
-	  li.active a {
-		  color:#FFB303;
-	  }
+		  li.active a {
+			  color:#FFB303;
+		  }
+			
+			li:first-of-type {
+				width: 20%;
+			}
+			
+			li:last-of-type {
+				width: 30%;
+			}
+			
     }
   }
   
