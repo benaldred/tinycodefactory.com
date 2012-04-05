@@ -25,14 +25,15 @@
 
   <%= render :partial => '/layouts/google_analytics' %>
 </head>
-<body class="<%= body_class %>">
-  <div id="top">
+<body class="<%= body_class %>" data-spy="scroll" id="top">
+  <div id="navbar" class="navbar navbar-fixed-top">
     <div class="container">
       <nav>
-        <ul>
-          <li><a href="/#projects">Projects</a></li>
-		  <li><a href="/#about">About</a></li>
-          <li><a href="/#contact">Contact us</a></li>
+        <ul class="nav">
+		  <li><a href="#top">Top</a></li>
+          <li><a href="#projects">Projects</a></li>
+		  <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </nav>
     </div>
@@ -62,10 +63,11 @@
 
   
   <!-- load JS for faster loading-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<%= asset_path("jquery") %>"><\/script>')</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-  <%= javascript_include_tag "application" %>
+
+  <%= javascript_include_tag "bootstrap-scrollspy", "application" %>
   
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->

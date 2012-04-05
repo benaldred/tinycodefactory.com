@@ -4,4 +4,17 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
-
+$(document).ready(function(){
+	
+	if($('.pages-index').length > 0) {
+	  
+		$('#navbar').scrollspy();
+  
+	  // add the scroll top methdods in
+	  $("#navbar .nav li a").click(function() {
+		  var href = $(this).attr("href");
+		  $(document.body).animate({scrollTop: jQuery(href).offset().top - 40}, 2000);
+		  return false;
+	  });
+	}
+});

@@ -6,6 +6,7 @@
 ------------------------------------------------------------------*/
 body { 
 	font-family: Cambria, Georgia, serif;
+	background:transparent image-url("bg_white.png") repeat;
 }
 
 
@@ -31,7 +32,7 @@ body {
   
 }
 
-#top {
+.navbar {
   background: #646464;
   @extend .clearfix;
   position: fixed;
@@ -46,7 +47,7 @@ body {
     background-color:transparent;
     @media screen and (min-width: 600px) {
       float:right;
-      width: 24em;
+      width: 30em;
     }
     
     ul {
@@ -55,7 +56,7 @@ body {
         font-weight: bold;
         text-transform: uppercase;
         float:left;
-        width: 33.333333%;
+        width: 25%;
         text-align: center;
         font-family: 'Ubuntu', sans-serif;
         
@@ -64,6 +65,10 @@ body {
           text-decoration: none;
         }
       }
+	  
+	  li.active a {
+		  color:#FFB303;
+	  }
     }
   }
   
@@ -81,7 +86,7 @@ header#app {
     padding-top: 80px;
   	padding-left: 0px;
   	font-family: 'Ubuntu', sans-serif;
-  	background:#fff image-url("factory/64_black.png") no-repeat top center;
+  	background:transparent image-url("factory/64_black.png") no-repeat top center;
   	margin: 0.5em 0;
     text-align: center;
     width: 100%;
@@ -135,6 +140,14 @@ header#app {
   }
 }
 
+
+/* help with aligning scroll to */
+#contact {
+	padding-top: 1px;
+}
+
+
+
 /* =p-content - primary content
 ------------------------------------------------------------------*/
 
@@ -146,10 +159,10 @@ header#app {
     background:#1a1a1a;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.15);
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.05);
-    margin-top: 4em;
+    margin-top: 3.5em;
   
     p {
-			color: #A5A978;
+			color: #4EC4CC;
   	  background:transparent;
       padding: 0.5em 0;
 	    font-size: 1.2em;
@@ -170,7 +183,7 @@ header#app {
   		color:#009933;
       margin-bottom:0;
       font-weight: normal;
-			margin-top: 4em;
+			margin-top: 1em;
   }
   
   
@@ -297,7 +310,7 @@ footer.app {
 	color:#464646;
 	width: 100%;
 	border-top:1px solid #ccc;
-	background:#fff image-url("factory/32_black.png") no-repeat center bottom;
+	background:transparent image-url("factory/32_black.png") no-repeat center bottom;
 	padding-top: 2em; padding-bottom: 4em;
 	margin-bottom: 2em;
   
@@ -335,7 +348,7 @@ footer.app {
 
 .projects .p-content .principle { margin-top:1em; }
 
-#projects {
+.projects {
 	@extend .clearfix;
   
   #showcase {
