@@ -1,3 +1,5 @@
+@import "compass";
+
 /* Organising and orchastrating the css files
 -------------------------------------------------------------------*/
 
@@ -33,7 +35,7 @@ body {
 }
 
 .navbar {
-  background: #646464;
+  background: #222;
   @extend .clearfix;
   position: fixed;
   width: 100%;
@@ -104,6 +106,7 @@ header#app {
   width: 100%;
   padding-top: 6em;
   @extend .clearfix;
+  position:relative;
 
   h1 {
   	font-size:3em;
@@ -573,6 +576,103 @@ footer.app {
       text-align: left;
 			width: 10em;
 			margin: 0 auto;
+	  }
+	}
+}
+
+#badge {
+  background:#009933;
+  width: 130px;
+  height: 130px;
+  @include border-radius(100%);
+  position:absolute;
+  right:0;
+  text-decoration:none;
+  @include box-shadow(rgba(black, 0.2) 1px 1px 10px);
+  
+  .text {
+    margin-top: 40px;
+    @include rotate(5deg);
+    width: 130px;
+  
+    p {
+			color: #fff;
+			margin: 0 0.5em;
+  	  background:transparent;
+      padding: 0.5em 0;
+	    font-size: 1.2em;
+	    font-weight: normal;
+		  font-style: italic;
+      text-align: center;
+      
+      strong {
+        font-size:120%;
+      }
+    }
+  }
+}
+// the responsive design div
+#ribbon {
+  left: -95px;
+  height: 5px;
+  top: 50px;
+  position: absolute;
+  text-decoration: none;
+  width: 300px;
+  @include rotate(-45deg);
+  z-index:102;
+  
+  p {
+    background: #646464;
+    color: white;
+    font-size: 14px;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    left: 0;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    @include box-shadow(rgba(black, 0.2) 1px 1px 10px);
+    @include transition(opacity, 1s);
+    
+    span {
+      font-size:80%;
+    }
+    //&:last-child {
+      /* this is the backside */
+    //  background: red;
+    //  opacity: 0;
+    //}
+  }
+  //:hover span {
+  //  &:first-child {
+  //    opacity: 0;
+  //  }
+  //  &:last-child {
+  //    opacity: 1;
+  //  }
+  //}
+}
+  
+@media all and (-webkit-transform-3d) {
+	#ribbon {
+	  span {
+	    opacity: 1 !important;
+	    -webkit-backface-visibility: hidden;
+	    -webkit-transition: -webkit-transform 1s;
+	    &:last-child {
+	      -webkit-transform: rotateX(180deg);
+	    }
+	  }
+	  &:hover span {
+	    &:first-child {
+	      -webkit-transform: rotateX(180deg);
+	    }
+	    &:last-child {
+	      -webkit-transform: rotateX(360deg);
+	    }
 	  }
 	}
 }

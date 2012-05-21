@@ -11,10 +11,10 @@ $(document).ready(function(){
 		$('#navbar').scrollspy();
   
 	  // add the scroll top methdods in
-	  $("#navbar .nav li a").click(function() {
+	  $("#navbar .nav li a, #badge").click(function() {
 		  var href = $(this).attr("href");
 		  $(document.body).animate({scrollTop: jQuery(href).offset().top - 40}, 2000);
 		  return false;
-	  });
+	  });	  
 	}
 });
