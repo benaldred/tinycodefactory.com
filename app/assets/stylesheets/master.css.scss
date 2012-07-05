@@ -582,28 +582,43 @@ footer.app {
 
 #badge {
   background:#009933;
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   @include border-radius(100%);
   position:absolute;
   right:0;
+  top:50px;
   text-decoration:none;
   @include box-shadow(rgba(black, 0.2) 1px 1px 10px);
+
+  @media screen and (min-width: 600px) {
+    width: 150px;
+    height: 150px;
+  }
   
   .text {
-    margin-top: 40px;
+    margin-top: 30px;
     @include rotate(5deg);
-    width: 130px;
+    width: 100px;
+
+    @media screen and (min-width: 600px) {
+      width: 150px;
+      margin-top: 40px;
+    }
   
     p {
 			color: #fff;
 			margin: 0 0.5em;
   	  background:transparent;
       padding: 0.5em 0;
-	    font-size: 1.2em;
+	    font-size: 1em;
 	    font-weight: normal;
 		  font-style: italic;
       text-align: center;
+
+      @media screen and (min-width: 600px) {
+        font-size: 1.4em;
+      }
       
       strong {
         font-size:120%;
@@ -621,6 +636,11 @@ footer.app {
   width: 300px;
   @include rotate(-45deg);
   z-index:102;
+  display: none;
+
+  @media screen and (min-width: 600px) {
+    display: block;
+  }
   
   p {
     background: #646464;
