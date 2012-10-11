@@ -6,11 +6,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
+
   <title>Tiny Code Factory</title>
-  
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  
+
   <%= favicon_link_tag 'factory/16_black.png', :rel => "icon", :type => "image/png" %>
 
   <%= stylesheet_link_tag    "application" %>
@@ -20,7 +20,7 @@
   <![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
-  
+
   <meta name="keywords" content="Tiny Code Factory, Web development, Ruby on Rails, Javascript, Ruby, Rails, freelance, contract, software, developer, software developer, Manchester, UK" />
 
   <meta name="description" content="We build simple, easy to use and beautiful web-based applications and turn ideas into online businesses and help companies to innovate" />
@@ -48,21 +48,21 @@
       <h1><a href="/">Tiny Code Factory.</a></h1>
 	  <a id="badge" href="#contact_us">
 		<div class="text">
-		  <p>Available from<br><strong>September</strong></p>
+		  <p>Available from<br><strong>Jan 2013</strong></p>
 		</div>
 	  </a>
     </header>
- 
+
     <section class="intro">
       <%= yield :intro %>
     </section>
-  </div><!-- .container -->   
-  
+  </div><!-- .container -->
+
   <div class="p-content clearfix">
     <%= content_for?(:content) ? yield(:content) : yield %>
   </div>
-  
-  <div class="container">  
+
+  <div class="container">
     <footer class="app clearfix">
       <p>Get in touch: <a href="mailto:hello@tinycodefactory.com">hello@tinycodefactory.com</a></p>
       <p>A tiny web development company built on big principles.</p>
@@ -71,21 +71,21 @@
     </footer>
   </div><!-- #container -->
 
-  
+
   <!-- load JS for faster loading-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 
   <%= javascript_include_tag "bootstrap-scrollspy", "application" %>
-  
+
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
-    
+
 </body>
 </html>
 
