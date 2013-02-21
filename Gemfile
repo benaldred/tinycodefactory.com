@@ -13,6 +13,7 @@ end
 
 gem 'jquery-rails'
 gem 'tumblr-api'
+gem 'psych'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
