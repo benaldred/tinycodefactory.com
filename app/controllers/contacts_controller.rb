@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
     @message = Message.new(params[:work])
 
     if @message.valid?
-      #MessageMailer.contact(params['work']).deliver
+      MessageMailer.contact(params['work']).deliver
       respond_with({:status => 200}, location: nil)
     else
       respond_with({:status => 442, :errors => @message.errors.messages}, location: nil)
