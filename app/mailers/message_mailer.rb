@@ -13,6 +13,6 @@ class MessageMailer < ActionMailer::Base
     @service = params['service']
     @message = params['message']
 
-    mail to: "to@example.org", subject: "Message from #{@name}<#{@email}>"
+    mail to: "benaldred@gmail.com", subject: "Message from #{@name}<#{@email}>"
   end
 end
