@@ -1,7 +1,3 @@
-validate_required = (field) ->
-
-
-
 $(document).ready ->
   $("#contact-form form").submit (e) ->
     form = this
