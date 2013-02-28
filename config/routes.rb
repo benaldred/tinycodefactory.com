@@ -1,4 +1,6 @@
 TinycodefactoryCom::Application.routes.draw do
-  root :to => "pages#index"
-  match '/projects/:id', :to => 'projects#show', :as => 'project', :constraints => {:id => /boxedup|qavs|sayt|chefnote/}
+  root :to => 'high_voltage/pages#show', :id => 'home'
+  match '/projects/:id', :to => 'projects#show', :as => 'project', :constraints => {:id => /commentarybox|boxedup|qavs|sayt|chefnote/}
+
+  post "/contact" => 'contacts#create'
 end

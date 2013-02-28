@@ -1,0 +1,28 @@
+<% content_for :intro do %>
+  <h1>Work</h1>
+<% end %>
+
+
+<div class="container clearfix projects">
+  <p class="subline">Latest work</p>
+  <section id="showcase">
+    <ul>
+      <% PROJECTS.each_with_index do |project, index| %>
+      <li class="major <%= cycle("first", "second") -%>">
+          <%= link_to image_tag("projects/#{project}/showcase.png"), project_path(project) %>
+
+          <div class="title">
+            <h2><%= link_to t(:title, :scope => [:projects, project]), project_path(project) %></h2>
+            <p><%#= t(:desc, :scope => [:projects, project]) %></p>
+          </div>
+
+        </li>
+      <% end %>
+
+    </ul>
+  </section>
+</div><!-- /#projects -->
+
+<div class="container clearfix">
+  <p class="big-text">Sometimes I'm not able to share all my work, due to the companies with non-disclosure agreements. However I am able to talk about them, so <%= link_to "contact me if you would like to hear about those", page_path("contact") %>.</p>
+</div>

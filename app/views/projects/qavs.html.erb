@@ -1,27 +1,22 @@
 <%-
- @project_title = "Queen's Award for Voluntary Service"
- @client = "Government Digital Service (GDS) - UK Government"
+ @project_title = "The Queen's Award for Voluntary Service"
+ @client = "Directgov - UK Government"
  @project= :qavs
- @next = "sayt"
 -%>
-
-
-<% content_for :intro do %>
-    <h1>Modernising and making the UK Government more efficient. We are tiny but we have big clients!</h1>
-<% end %>
-
 
 <% content_for :project_image do %>
   <%= image_tag("projects/qavs/showcase.png") %>
 <% end %>
 
 
-<p>The Queens Award for Voluntary Service takes place every year, recognising and awarding voluntary organisations throughout the UK. Currently the nominations occur via the postal system.
-The task was to move the award nomination and nomination reporting system online, to make it more efficient and give the staff who process the award nominations a back office and reporting system.</p>
-<p>The system was built in Ruby on Rails and features a fully automated test suite. The site has a custom workflow system to track nominations through the voting stages, email notification and a reporting system with csv downloads.</p>
-<!--<p><a href="#">Not live yet</a></p>-->
+<p>The application was built to handle the nomination submission and awards process that was all done by post.</p>
+<p>The goal was to make it more efficient and give the staff who process the award nominations a back office and reporting system.</p>
+<p>Built in Ruby on Rails and featuring a fully automated test suite. The site has a custom workflow system to track nominations through the voting stages, email notification and a reporting system with csv downloads.</p>
+<p><a href="http://qavs.direct.gov.uk">See the site</a></p>
 <ul class="skills">
 	<li>Ruby on Rails</li>
   <li>MongoDB</li>
-  <li>Automated testing Rspec, Cucmber</li>
+  <li>Automated testing</li>
+  <li>Rspec</li>
+  <li>Cucumber</li>
 </ul>

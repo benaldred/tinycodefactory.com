@@ -1,0 +1,28 @@
+<% content_for :intro do %>
+  <h1>Helping startups and established businesses build custom web and mobile applications.</h1>
+  <hgroup>
+
+    <h3>Looking for a dependable, experienced developer with a track record of turning ideas into businesses and improving existing ones?</h3>
+    <p class="call"><%=link_to "Get in touch", page_path("contact") %></p>
+  </hgroup>
+  <div id="featured-project">
+    <h2>Featured work</h2>
+    <%= link_to image_tag("projects/qavs/showcase.png"), project_path("qavs") %>
+  </div>
+<% end %>
+
+
+
+<div class="ribbon">
+	<div class="container">
+	  <h3>Worked with:</h3>
+    <ul class="logos">
+      <li><%= image_tag "logos/bbc.png"%></li>
+      <li><%= image_tag "logos/directgov.png"%></li>
+    </ul>
+	</div>
+</div>
+
+<div class="container clearfix">
+  <p class="big-text">Want to know more? Learn more about <%=link_to "how I can help you", page_path("expertise") %>, <%=link_to "my experience", page_path("work") %> or more <%=link_to "about me and how I work", page_path("about") %>.</p>
+</div>

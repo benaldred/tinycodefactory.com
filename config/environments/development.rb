@@ -28,3 +28,6 @@ TinycodefactoryCom::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+ENV['MANDRILL_USERNAME'] = 'TinycodefactoryCom'
+ENV["MANDRILL_APIKEY"] = 'f_lmgaPeNOz4EvSNO2CE_w'

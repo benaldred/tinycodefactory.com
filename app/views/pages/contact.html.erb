@@ -1,0 +1,38 @@
+
+<% content_for :intro do %>
+  <h1>Contact</h1>
+<% end %>
+
+<div id="contact_us" class="clearfix">
+
+  <div class="container clearfix">
+    <p class="subline">Go on! I'm friendly, honest.</p>
+
+    <div class="vcard">
+      <section class="col first">
+        <h1>What I need to know</h1>
+        <h2>Budget</h2>
+        <p>What kind of budget do you have? See my prices below for rough costs.</p>
+        <h2>Timescales</h2>
+        <p>When would you like to start? Do you have a deadline?</p>
+        <h2>Project outline</h2>
+        <p>Do you have details of the project? The <strong>more the better</strong>.</p>
+      </section>
+
+      <section id="contact-form">
+        <%= simple_form_for :work do |f| %>
+          <%= f.input :name, label: false, placeholder: "Name" %>
+          <%= f.input :email, label: false, placeholder: "Email" %>
+          <%= f.input :service, as: :select, collection: ['Just saying hello', 'Application development', 'Project rescue', 'Startup CTO', 'Lean Startup consultancy', 'Tech consultancy',
+'Something else'], prompt: "What do you require?", label: false %>
+          <%= f.input :message, as: :text, label: false, placeholder: "Message. See 'what do I need to know'" %>
+          <%= f.button :submit, "Send work request", class: "button" %>
+        <% end %>
+      </section>
+    </div>
+  </div>
+<div class="container clearfix">
+  <h2 id="costs">Costs</h2>
+  <p>I work on a daily rate of £350/day for development work and a rate of £100/hour for consultancy.</p>
+</div>
+</div>

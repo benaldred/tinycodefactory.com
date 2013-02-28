@@ -33,19 +33,18 @@
 </div>-->
   <div id="navbar" class="navbar navbar-fixed-top">
     <div class="container">
-      <nav>
+      <h1><a href="/">Tiny Code Factory.</a></h1>
         <ul class="nav">
-		  <%= nav_li("Top") %>
-		  <%= nav_li("Projects") %>
-		  <%= nav_li("About") %>
-		  <%= nav_li("Contact us") %>
+          <li class="home"><%= link_to "Home", root_path %></li>
+		      <li class="expertise"><%=link_to "Expertise", page_path("expertise") %></li>
+		      <li class="about"><%=link_to "About", page_path("about") %></li>
+          <li class="work"><%=link_to "Work", page_path("work") %></li>
+          <li class="contact"><%=link_to "Contact", page_path("contact") %></li>
         </ul>
-      </nav>
     </div>
   </div>
   <div class="container">
     <header id="app">
-      <h1><a href="/">Tiny Code Factory.</a></h1>
 	  <!--<a id="badge" href="#contact_us">
 		<div class="text">
 		  <p>Available from<br><strong>Jan 2013</strong></p>
@@ -53,7 +52,7 @@
 	  </a>-->
     </header>
 
-    <section class="intro">
+    <section class="intro clearfix">
       <%= yield :intro %>
     </section>
   </div><!-- .container -->
@@ -64,10 +63,7 @@
 
   <div class="container">
     <footer class="app clearfix">
-      <p>Get in touch: <a href="mailto:hello@tinycodefactory.com">hello@tinycodefactory.com</a></p>
-      <p>A tiny web development company built on big principles.</p>
-	  <p>Company number: 7811925</p>
-      <p><span class="copywrite">© Copyright <span id="cw-date">2011 - <%= Date.today.year %></span></span> tinycodefactory.com</p>
+      <p><span class="copywrite">© Copyright <span id="cw-date">2011 - <%= Date.today.year %></span></span> tinycodefactory.com | Company number: 7811925 | <a href="mailto:hello@tinycodefactory.com">hello@tinycodefactory.com</a></p>
     </footer>
   </div><!-- #container -->
 
