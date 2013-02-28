@@ -67,6 +67,7 @@ GEM
     mime-types (1.21)
     multi_json (1.6.1)
     multi_xml (0.4.1)
+    newrelic_rpm (3.5.0.1)
     polyglot (0.3.3)
     psych (1.3.4)
     rack (1.4.5)
@@ -130,6 +131,7 @@ DEPENDENCIES
   compass-rails
   high_voltage
   jquery-rails
+  newrelic_rpm
   psych
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
