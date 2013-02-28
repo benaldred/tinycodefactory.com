@@ -1,5 +1,5 @@
 class MessageMailer < ActionMailer::Base
-  default from: "bot@tinycodefactory.com"
+  default from: "ben@tinycodefactory.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
