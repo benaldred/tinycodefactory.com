@@ -29,5 +29,5 @@ TinycodefactoryCom::Application.configure do
   config.assets.debug = true
 end
 
-#ENV['MANDRILL_USERNAME'] = 'TinycodefactoryCom'
-#ENV["MANDRILL_APIKEY"] = 'f_lmgaPeNOz4EvSNO2CE_w'
+ENV['MANDRILL_USERNAME'] = 'TinycodefactoryCom'
+ENV["MANDRILL_APIKEY"] = 'f_lmgaPeNOz4EvSNO2CE_w'
