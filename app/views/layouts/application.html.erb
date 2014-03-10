@@ -7,8 +7,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Tiny Code Factory</title>
-
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <%= favicon_link_tag 'factory/16_black.png', :rel => "icon", :type => "image/png" %>
@@ -21,9 +19,7 @@
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 
-  <meta name="keywords" content="Tiny Code Factory, Web development, Ruby on Rails, Javascript, Ruby, Rails, freelance, contract, software, developer, software developer, Manchester, UK" />
-
-  <meta name="description" content="We build simple, easy to use and beautiful web-based applications and turn ideas into online businesses and help companies to innovate" />
+  <%= display_meta_tags :site => 'Tiny Code Factory' %>
 
   <%= render :partial => '/layouts/google_analytics' %>
 </head>
@@ -52,7 +48,11 @@
 	  </a>-->
     </header>
 
+<<<<<<< HEAD
     <section class="intro clearfix">
+=======
+    <section class="intro">
+>>>>>>> Add meta tags to layout
       <%= yield :intro %>
     </section>
   </div><!-- .container -->
@@ -84,4 +84,3 @@
 
 </body>
 </html>
-
