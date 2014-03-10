@@ -1,23 +1,26 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.0.0'
 
-gem 'rails', '3.2.12'
+gem 'rails', '3.2.17'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 3.2.6'
+  gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier', '>= 1.0.3'
   gem 'compass-rails'
 end
 
 gem 'jquery-rails'
-gem 'tumblr-api'
-gem 'psych'
 gem "high_voltage"
 gem 'simple_form'
 
+gem 'meta-tags', :require => 'meta_tags'
+
+group :development do
+  gem "better_errors"
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
