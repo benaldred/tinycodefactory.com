@@ -29,9 +29,9 @@
 </div>-->
   <div id="navbar" class="navbar navbar-fixed-top">
     <div class="container">
-      <h1><a href="/">Tiny Code Factory.</a></h1>
+      <h1><a href="/">Tiny Code Factory <span>Ruby on Rails consultant, Manchester, UK</span></a></h1>
         <ul class="nav">
-          <li class="home"><%= link_to "Home", root_path %></li>
+          <!--<li class="home"><%= link_to "Home", root_path %></li>-->
 		      <li class="expertise"><%=link_to "Expertise", page_path("expertise") %></li>
 		      <li class="about"><%=link_to "About", page_path("about") %></li>
           <li class="work"><%=link_to "Work", page_path("work") %></li>
@@ -59,7 +59,23 @@
 
   <div class="container">
     <footer class="app clearfix">
-      <p><span class="copywrite">© Copyright <span id="cw-date">2011 - <%= Date.today.year %></span></span> tinycodefactory.com | Company number: 7811925 | <a href="mailto:hello@tinycodefactory.com">hello@tinycodefactory.com</a></p>
+      <p itemscope itemtype="http://schema.org/Organization">
+        <%= image_tag '/assets/factory/64_black.png', alt: "Tiny Code Factory logo", size: "32x32" %>
+        <span class="copywrite">© Copyright <span id="cw-date">2011 - <%= Date.today.year %></span>
+        <span itemprop="name">Tiny Code Factory</span>
+        | <a href="http://tinycodefactory.com" itemprop="url">tinycodefactory.com</a>
+        | Company number: 7811925</p>
+
+      <div itemprop="location">
+        <span itemscope itemtype="http://schema.org/Place">
+          <div itemprop="geo">
+            <span itemscope itemtype="http://schema.org/GeoCoordinates">
+              <span property="latitude" content="53.47070769"></span>
+              <span property="longitude" content="-2.2357559"></span>
+            </span>
+          </div>
+        </span>
+      </div>
     </footer>
   </div><!-- #container -->
 

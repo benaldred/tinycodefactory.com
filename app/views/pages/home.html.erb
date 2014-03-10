@@ -1,3 +1,19 @@
+<% title 'Ruby on Rails Web Development | Manchester UK' %>
+<% description "We build simple, easy to use and beautiful web-based applications and turn ideas into online businesses and help companies to innovate" %>
+<% keywords 'Tiny Code Factory, Web development, Javascript, Ruby on Rails, Ruby, Rails, Developer, Freelance, Freelancer, Contractor, Manchester, UK' %>
+<% set_meta_tags :og => {
+  :title    => 'Ruby on Rails Web Development | Manchester UK',
+  :type     => 'website',
+  :url      => root_url,
+  :site_name    => 'Tiny Code Factory',
+  :description    => "We build simple, easy to use and beautiful web-based applications and turn ideas into online businesses and help companies to innovate"
+},
+:twitter => {
+  :card => "summary",
+  :site => "@benaldred"
+},
+:canonical => request.original_url %>
+
 <% content_for :intro do %>
   <h1>Helping startups and established businesses build custom web and mobile applications.</h1>
   <hgroup>
@@ -15,7 +31,7 @@
 
 <div class="ribbon">
 	<div class="container">
-	  <h3>Worked with:</h3>
+	  <h3>Clients:</h3>
     <ul class="logos">
       <li><%= image_tag "logos/bbc.png"%></li>
       <li><%= image_tag "logos/directgov.png"%></li>
