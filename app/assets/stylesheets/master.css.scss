@@ -259,6 +259,10 @@ header#app {
     //text-align: center;
     width: 100%;
     margin-top:0;
+    z-index: 101;
+    position: relative;
+    background: rgba(255,255,255,0.8);
+    //rgba(0, 153, 51, 0.8);
 
     @media screen and (min-width: 600px) {
       font-size:40px;
