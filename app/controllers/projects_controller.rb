@@ -1,14 +1,8 @@
 class ProjectsController < ApplicationController
   layout "projects"
-  before_filter :set_http_cache_headers
+  caches_page :show
 
   def show
     render :template => "projects/#{params[:id]}"
-  end
-
-  def set_http_cache_headers
-    last_modified = File.mtime("#{Rails.root}/app/views/projects/#{params[:id]}.html.erb")
-    fresh_when last_modified: last_modified , public: true, etag: last_modified
-    expires_in 10.seconds, public: true
   end
 end
