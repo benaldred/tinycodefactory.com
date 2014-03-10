@@ -41,4 +41,8 @@
     <loc>http://tinycodefactory.com/projects/boxedup</loc>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>http://tinycodefactory.com.dev/projects/sayt</loc>
+    <changefreq>daily</changefreq>
+  </url>
 </urlset>

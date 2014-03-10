@@ -18,6 +18,12 @@ gem 'simple_form'
 
 gem 'meta-tags', :require => 'meta_tags'
 
+#http caching
+gem 'rack-cache'
+gem 'dalli'
+gem 'kgio'
+gem "memcachier"
+
 group :development do
   gem "better_errors"
 end
