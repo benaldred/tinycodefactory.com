@@ -15,8 +15,8 @@
 :canonical => request.original_url %>
 
 <% content_for :intro do %>
-  <h1><%= @project_title || "Random Project" %></h1>
-  <% if @client %><h2><%= @client %></h2><% end %>
+  <h2><%= @project_title || "Secret Project" %></h2>
+  <% if @client %><h3><%= @client %></h3><% end %>
 <% end %>
 
 <% content_for :content do %>
