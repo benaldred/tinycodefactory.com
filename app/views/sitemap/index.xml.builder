@@ -3,7 +3,11 @@ xml.instruct!
 #      "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9",
 #      "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance",
 #      "xsi:schemaLocation"=>"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-xml.urlset do
+xml.urlset(
+  "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9",
+  "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance",
+  "xsi:schemaLocation"=>"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd") do
+
   xml.url do
     xml.loc 'http://tinycodefactory.com/'
     xml.changefreq "daily"
