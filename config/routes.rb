@@ -4,5 +4,5 @@ TinycodefactoryCom::Application.routes.draw do
 
   post "/contact" => 'contacts#create'
 
-  get '/sitemap.xml' => 'sitemap#index'
+  get '/sitemap' => 'sitemap#index'
 end
