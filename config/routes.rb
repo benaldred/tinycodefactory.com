@@ -3,4 +3,6 @@ TinycodefactoryCom::Application.routes.draw do
   match '/projects/:id', :to => 'projects#show', :as => 'project', :constraints => {:id => /commentarybox|boxedup|qavs|sayt|chefnote/}
 
   post "/contact" => 'contacts#create'
+
+  get '/sitemap.xml' => 'sitemap#index'
 end
