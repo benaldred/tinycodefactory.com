@@ -6,14 +6,14 @@
 
 /* current page indicator */
 body.pages.show.home .nav .home a,
-body.pages.show.expertise .nav .expertise a,
+body.pages.show.services .nav .services a,
 body.pages.show.about .nav .about a,
 body.pages.show.work .nav .work a,
 body.projects.show .nav .work a,
 body.pages.show.contact .nav .contact a {
+  color: #fff;
   border-bottom: 2px solid #009933;
 }
-
 
 #contact-form {
   width: 100%;
@@ -71,7 +71,7 @@ body.pages {
         h3 {
           font-size: 16px;
           font-style: italic;
-          font-family: Cambria, Georgia, serif;
+          font-family: 'Merriweather', serif;
           font-weight: normal;
         }
       }
@@ -89,8 +89,9 @@ body.pages {
 /* =body
 ------------------------------------------------------------------*/
 body {
-	font-family: Cambria, Georgia, serif;
+  font-family: 'Merriweather', serif;
 	//background:transparent image-url("bg_white.png") repeat;
+  //line-height: 1.5;
 }
 
 .p-content {
@@ -102,6 +103,7 @@ body {
     color:#000;
     text-align: center;
     font-weight:normal;
+    line-height: 1.5;
   }
 }
 
@@ -136,15 +138,30 @@ body {
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.15);
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.15);
   padding: 20px 0;
+  padding-left: 20px;
+
+  @media screen and (min-width: 750px) {
+    padding-left: 0px;
+  }
+
+  .img-bg {
+    border: 2px solid #fff;
+    background: #fff;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+    @include border-radius(5px);
+
+    img {
+      display: inline-block;
+    }
+  }
 
   h1 {
     color: #fff;
-    font-family: 'Ubuntu', sans-serif;
-    display: block;
-
-    background:transparent image-url("factory/32_white_on_black.png") no-repeat left top;
-    padding-left: 35px;
-    line-height: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 10px 20px 10px 20px;
 
     @media screen and (min-width: 750px) {
@@ -163,11 +180,12 @@ body {
       text-decoration: none;
     }
 
-    span {
+    .sub {
       font-size: 50%;
       text-transform: uppercase;
       line-height: 1.2;
       display: block;
+      color: #b2b1a8;
     }
   }
 
@@ -212,12 +230,12 @@ body {
       text-transform: uppercase;
       float:left;
       text-align: center;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
       list-style-type: none;
       margin-left: 20px;
 
       a {
-        color:#fff;
+        color:#b2b1a8;
         text-decoration: none;
         display: block;
       }
@@ -252,9 +270,10 @@ header#app {
   h2 {
     font-size:25px;
     font-weight:normal;
-    //color:#009933;
+    color:#38393a;
     padding-left: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
     margin: 0.5em 0;
     //text-align: center;
     width: 100%;
@@ -279,7 +298,7 @@ header#app {
     }
 
     @media only screen and (min-width: 1024px) {
-      padding-top: 50px;
+      padding-top: 30;
     }
 
     h2 {
@@ -300,6 +319,7 @@ header#app {
     h3 {
       margin-top: 2em;
       font-size: 18px;
+      line-height: 1.5;
 
       color:#000;
       //text-align: center;
@@ -373,6 +393,14 @@ header#app {
       width: 100%;
       border: 5px solid #e1e1e1;
       border: 5px solid rgba(0,0,0,0.05);
+    }
+
+    h3 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: rgba(251,215,109, 0.9);
+      padding: 20px;
     }
   }
 }
@@ -453,7 +481,7 @@ body.projects-show {
 
   h2, h3 {
   		margin:0 0 0.5em;
-  		font-family: 'Ubuntu', sans-serif;
+  		font-family: 'Source Sans Pro', sans-serif;
   }
 
   h2 {
@@ -680,7 +708,7 @@ footer.app {
 
           h2, p {
             color:#fff;
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
             font-size:1em;
             margin:0; padding:0;
             margin-left:1em;
@@ -719,7 +747,7 @@ footer.app {
 		margin-bottom: 3em;
 
 	  h1 {
-	  		font-family: 'Ubuntu', sans-serif;
+	  		font-family: 'Source Sans Pro', sans-serif;
 	  		font-size: 3em;
 	  		color:#009933;
 	      font-weight: normal;
@@ -900,7 +928,7 @@ footer.app {
     font-size: 14px;
     font-weight:bold;
     text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     left: 0;
     padding: 10px 0;
     position: absolute;

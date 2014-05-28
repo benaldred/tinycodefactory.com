@@ -16,7 +16,8 @@
   <!--[if lt IE 9]>
   	<%= javascript_include_tag "respond" %>
   <![endif]-->
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 
   <%= display_meta_tags :site => 'Tiny Code Factory | Ruby on Rails Web Development | Manchester UK' %>
@@ -29,14 +30,19 @@
 </div>-->
   <div id="navbar" class="navbar navbar-fixed-top">
     <div class="container">
-      <h1><a href="/">Tiny Code Factory <span>Ruby on Rails consultant, Manchester, UK</span></a></h1>
-        <ul class="nav">
-          <!--<li class="home"><%= link_to "Home", root_path %></li>-->
-		      <li class="expertise"><%=link_to "Expertise", page_path("expertise") %></li>
-		      <li class="about"><%=link_to "About", page_path("about") %></li>
-          <li class="work"><%=link_to "Work", page_path("work") %></li>
-          <li class="contact"><%=link_to "Contact", page_path("contact") %></li>
-        </ul>
+      <div class="img-bg"><%= image_tag "factory/32_white_on_black.png" %></div>
+      <h1>
+
+        <a href="/">Tiny Code Factory <span class="sub">Ruby on Rails consultant, Manchester, UK</span></a>
+      </h1>
+
+      <ul class="nav">
+        <!--<li class="home"><%= link_to "Home", root_path %></li>-->
+	      <li class="services"><%=link_to "Services", page_path("services") %></li>
+	      <li class="about"><%=link_to "About", page_path("about") %></li>
+        <li class="work"><%=link_to "Work", page_path("work") %></li>
+        <li class="contact"><%=link_to "Contact", page_path("contact") %></li>
+      </ul>
     </div>
   </div>
   <div class="container">
