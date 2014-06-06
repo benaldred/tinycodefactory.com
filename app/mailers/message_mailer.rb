@@ -6,13 +6,12 @@ class MessageMailer < ActionMailer::Base
   #
   #   en.messages.contact.subject
   #
-  #"work"=>{"name"=>"Ben Aldred", "email"=>"benaldred@gmail.com", "service"=>"1", "message"=>"foo bar"
   def contact(params)
     @name = params['name']
     @email = params['email']
     @service = params['service']
     @message = params['message']
 
-    mail to: "benaldred@gmail.com", subject: "Message from #{@name}<#{@email}>"
+    mail to: "ben@tinycodefactory.com", subject: "Message from #{@name}<#{@email}>"
   end
 end
